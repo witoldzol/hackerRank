@@ -15,8 +15,10 @@ function minimumBribes(queue) {
                 console.log('Too chaotic')
                 return
             }
-            result += placesMoved
         }
+        let range = Math.max(0, current)
+
+
         if(next){
             if(current <= index && current > next) {
                 result++
